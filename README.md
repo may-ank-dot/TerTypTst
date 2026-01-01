@@ -22,12 +22,12 @@ A simple **terminal-based typing speed test** built using **Rust**. The program 
 ```
 typing_test/
 ├── Cargo.toml
-├── Sentence.txt
+├── Paragraph
 └── src/
     ├── main.rs        // Entry point
     ├── sentence.rs    // Sentence loading & selection
     ├── test.rs        // Typing test & timing
-    └── stats.rs       // WPM & accuracy calculation
+    └── stats.rs      // WPM & accuracy calculation
 ```
 
 ---
@@ -42,10 +42,10 @@ cargo run
 
 ## Sentence File Format
 
-`Sentence.txt` contains comma-separated sentences:
+`Paragraph` contains comma-separated sentences:
 
 ```
-Rust is fast and safe,Practice improves typing speed,Learning Rust is fun
+Rust is a fast and memory safe programming language that helps developers write reliable software
 ```
 
 ---
