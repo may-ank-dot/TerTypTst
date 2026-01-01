@@ -9,6 +9,10 @@ pub fn print_results(sentence: &str, result: &TestResult) {
 
     let accuracy =
         (correct_chars as f64 / sentence.chars().count() as f64) * 100.0;
+    if accuracy == 0.0 {
+        println!("Something went wrong!");
+        return 
+    }
 
     let words = sentence.split_whitespace().count();
     let wpm = (words as f64 / result.duration) * 60.0;
