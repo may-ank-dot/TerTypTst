@@ -1,0 +1,4 @@
+Rust is fast and memory-safe, It has no garbage collector,
+Ownership makes Rust unique, It is great for systems programming,
+Rust is loved by developers
+
